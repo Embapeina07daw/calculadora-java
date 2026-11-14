@@ -34,4 +34,20 @@ public class Calculadora {
         return a / b;
     }
 
+    public double potencia(double base, double exponente) {
+        double resultado = base;
+        for(int i = 1;i<exponente;i++){
+            resultado *= base;
+        }
+        return resultado;
+    }
+    
+    public double modulo(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException(
+                    "No se puede dividir entre cero"
+            );
+        }
+        return a % b;
+    }
 }
